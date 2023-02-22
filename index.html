@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <div class="margin">
+    <div>
+    <p>Name</p>
+    <input id="name"type="text" onfocus="Focus_Name(this)"  onblur="Blur_Name(this)" onchange="submit()">
+    </div>
+    <div>
+        <p>Surname</p>
+        <input id="surname" type="text" onfocus="Focus_Surname(this)"  onblur="Blur_Surname(this)" onchange="submit()">
+    </div>
+    <div style="display: inline;">
+        <p id="date">Date of Birth</p>
+        <input id="datee" type="date" style="margin-top: 0%;" onchange="submit()">
+    </div>
+  
+    <p id="seleced">
+        <label>Gender</label>
+        <select id="menu" onchange="submit()" style="margin-left: 10px;">
+        <option value="-- Select --">-- Select --</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Trans">Trans</option>
+        <option value="Complicate">Complicate</option>
+        </select>
+    </p>
+
+
+    <button class="button" onclick="submitt()">Add</button>
+    <h1 id="output"></h1>
+</div>
+</center>
+    <script src="src.js" ></script>
+</body>
+</html>
